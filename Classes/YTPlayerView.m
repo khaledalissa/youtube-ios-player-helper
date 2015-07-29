@@ -719,7 +719,7 @@ NSString static *const kYTPlayerStaticProxyRegexPattern = @"^https://content.goo
       [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 
   NSString *embedHTML = [NSString stringWithFormat:embedHTMLTemplate, playerVarsJsonString];
-  [self.webView loadHTMLString:embedHTML baseURL: [NSURL URLWithString:@"http://watchalong.co"]];
+  [self.webView loadHTMLString:embedHTML baseURL: [NSURL URLWithString:@"http://watchalong.co"]]; 
   [self.webView setDelegate:self];
   self.webView.allowsInlineMediaPlayback = YES;
   self.webView.mediaPlaybackRequiresUserAction = NO;
