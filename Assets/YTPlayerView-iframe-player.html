@@ -19,9 +19,9 @@
 <head>
     <style>
     
-    body { margin: 0;}
+    body { margin: 0;} 
     </style>
-    <meta name="viewport" content="width=720, initial-scale=1">
+    <meta name="viewport" content="width=720, initial-scale=1, minimum-scale=1, maximum-scale=1">
 </head>
 <body>
     <div id="player"></div>
@@ -30,15 +30,13 @@
     <script>
         var resizePlayer = function() {
 
-        var abody = document.getElementById('body');
+
         var player = document.getElementById('player');
         var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || document.height;
         var height = window.innerHeight || document.documentElement.clientHeight|| document.body.clientHeight || document.width;
 
 
 
-        abody.style.width = width + 'px';
-        abody.style.height = height + 'px';
         player.style.width = width + 'px';
         player.style.height = height + 'px';
     };
