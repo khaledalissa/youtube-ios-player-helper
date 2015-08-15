@@ -788,6 +788,8 @@ NSString static *const kYTPlayerAdUrlRegexPattern = @"^http(s)://pubads.g.double
   webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
   webView.scrollView.scrollEnabled = NO;
   webView.scrollView.bounces = NO;
+
+  webView.scalesPageToFit = YES;
   return webView;
 }
 
