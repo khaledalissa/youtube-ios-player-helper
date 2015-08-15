@@ -647,7 +647,7 @@ NSString static *const kYTPlayerAdUrlRegexPattern = @"^http(s)://pubads.g.double
     [playerVars addEntriesFromDictionary:[playerParams objectForKey:@"playerVars"]];
       
     if (![playerVars objectForKey:@"origin"]) {
-        self.originURL = [NSURL URLWithString:@"about:blank"];
+        self.originURL = [NSURL URLWithString:@"http://watchalong.co"];
     } else {
         self.originURL = [NSURL URLWithString: [playerVars objectForKey:@"origin"]];
     }
